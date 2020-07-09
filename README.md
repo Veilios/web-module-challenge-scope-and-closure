@@ -9,7 +9,14 @@ The module challenge is the afternoon project or assignment that students work t
 ## Objectives
 
 - Explain function scope
+
+When a variable is declared inside a function, that variable only exists, and can only be used within that function. To access something outside the function, one would have to use the return keyword. Any varaibles outside a function can be accessed by any function.
+
 - Describe what closure is, how closure is created in a program and why it is important to understand closures in JavaScript  
+
+It is a function within another function. That inner function has access to the outer functions scope. 
+
+
 
 ## Introduction
 
@@ -42,6 +49,9 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+
+It is a function within another function. That inner function has access to the outer functions scope. Also it is a way of making variables more private.
+
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -63,8 +73,12 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+  on line 59, because it is using a return keyword for a function
+
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
-c. What is the lexical scope of `newRoll`? 
+what stays the same is the name parameter, always consoling Dan, what could change a lot is the new roll, giving a random number evrytime it is called.
+
+c. What is the lexical scope of `newRoll`? Static
 
 ### Task 2c - Exit Ticket
 
